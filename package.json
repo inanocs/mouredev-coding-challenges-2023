@@ -4,7 +4,7 @@
   "description": "Solutions regarding to mouredev coding challenges 2023",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose"
   },
   "repository": {
     "type": "git",
