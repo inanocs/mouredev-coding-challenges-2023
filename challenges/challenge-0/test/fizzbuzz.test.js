@@ -1,6 +1,6 @@
 import { fizzBuzz } from 'challenge-0/src/fizzbuzz'
 
-export default describe('Challenge 0', () => {
+describe('Challenge 0', () => {
   const filterCondition = (num, expectedResult) =>
     fizzBuzz(num) === expectedResult
   test('fizz response', () => {
