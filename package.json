@@ -1,0 +1,29 @@
+{
+  "name": "mouredev-coding-challenges-2023",
+  "version": "1.0.0",
+  "description": "Solutions regarding to mouredev coding challenges 2023",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inanocs/mouredev-retos-programacion-2023.git"
+  },
+  "author": "inanocs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inanocs/mouredev-retos-programacion-2023/issues"
+  },
+  "homepage": "https://github.com/inanocs/mouredev-retos-programacion-2023#readme",
+  "devDependencies": {
+    "@types/jest": "^29.2.5",
+    "eslint": "^8.31.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "29.3.1"
+  },
+  "type": "module"
+}
