@@ -1,6 +1,6 @@
-# English
+> # English
 
-## Welcome coder :D
+## Welcome coder 👨🏻‍💻👩🏻‍💻
 
 The purpose of this repo is to join to **[MoureDev](https://github.com/mouredev/)** initiative and share my solutions for **[2023 coding challenges](https://github.com/mouredev/retos-programacion-2023/)**.
 
@@ -29,9 +29,9 @@ There are two ways to run test suite cases:
 > 1. **npm install && npm run test**
 > 2. **npm start**
 
-# Español
+> # Español
 
-## Bienvenido coder :D
+## Bienvenido coder 👨🏻‍💻👩🏻‍💻
 
 El proposito de este repo es sumarme a la iniciativa de **[MoureDev](https://github.com/mouredev/)** y compartir mis soluciones para **[los retos de programación de 2023](https://github.com/mouredev/retos-programacion-2023/)**.
 
