@@ -1,7 +1,7 @@
 import { convertToLeet } from 'challenge-1/src/leet'
 const jTest = test
 
-export default describe('Leet test cases', () => {
+describe('Challenge 1 - Leet alphabet converter', () => {
   const testSamples = [
     {
       input: 'Hola mundo, reto de programación 1 en lenguaje leet! :D',
