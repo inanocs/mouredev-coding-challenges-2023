@@ -29,6 +29,8 @@ There are two ways to run test suite cases:
 > 1. **npm install && npm run test**
 > 2. **npm start**
 
+---
+
 # Español
 
 ## Bienvenido coder 👨🏻‍💻👩🏻‍💻
