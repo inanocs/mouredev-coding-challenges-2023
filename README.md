@@ -1,4 +1,4 @@
-> # English
+# English
 
 ## Welcome coder 👨🏻‍💻👩🏻‍💻
 
@@ -29,7 +29,7 @@ There are two ways to run test suite cases:
 > 1. **npm install && npm run test**
 > 2. **npm start**
 
-> # Español
+# Español
 
 ## Bienvenido coder 👨🏻‍💻👩🏻‍💻
 
