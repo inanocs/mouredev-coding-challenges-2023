@@ -2,7 +2,7 @@
 
 ## Welcome coder 👨🏻‍💻👩🏻‍💻
 
-The purpose of this repo is to join to **[MoureDev](https://github.com/mouredev/)** initiative and share my solutions for **[2023 coding challenges](https://github.com/mouredev/retos-programacion-2023/)**.
+The purpose of this repo is to join to **[MoureDev](https://github.com/mouredev/)** initiative and share my solutions for **[2023 weekly coding challenges](https://github.com/mouredev/retos-programacion-2023/)**.
 
 > **All the ideas regarding to the challenges have been created by [MoureDev](https://github.com/mouredev/) and all copyrights reserved.**
 
@@ -35,7 +35,7 @@ There are two ways to run test suite cases:
 
 ## Bienvenido coder 👨🏻‍💻👩🏻‍💻
 
-El proposito de este repo es sumarme a la iniciativa de **[MoureDev](https://github.com/mouredev/)** y compartir mis soluciones para **[los retos de programación de 2023](https://github.com/mouredev/retos-programacion-2023/)**.
+El proposito de este repo es sumarme a la iniciativa de **[MoureDev](https://github.com/mouredev/)** y compartir mis soluciones para **[los retos de programación semanales de 2023](https://github.com/mouredev/retos-programacion-2023/)**.
 
 > **Todas las ideas relacionadas con los retos han sido creadas por [MoureDev](https://github.com/mouredev/) y todos los derechos de autor reservados.**
 
