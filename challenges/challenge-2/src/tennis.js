@@ -1,9 +1,8 @@
+const POINTS = ['Love', '15', '30', '40']
+
 const TIE = 'Deuce'
 const AD = 'AD to %player%'
 const WINNER = '%player% win the game'
-
-const POINTS = ['Love', '15', '30', '40']
-
 const POINTS_DIFFERENCE_MESSAGE = [TIE, AD, WINNER]
 
 export const UNKNOWN_PLAYER_ERROR = 'Unknown player, available players: P1,P2'
