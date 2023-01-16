@@ -1,13 +1,12 @@
 const TIE = 'Deuce'
-const AD = 'AD'
+const AD = 'AD to %player%'
+const WINNER = '%player% win the game'
 
 const POINTS = ['Love', '15', '30', '40']
 
-const POINTS_DIFFERENCE_MESSAGE = {
-  0: TIE,
-  1: `${AD} to %player%`,
-  2: '%player% win the game',
-}
+const POINTS_DIFFERENCE_MESSAGE = [TIE, AD, WINNER]
+
+export const UNKNOWN_PLAYER_ERROR = 'Unknown player, available players: P1,P2'
 
 export const playMatch = (results = []) => {
   const players = {
@@ -18,24 +17,24 @@ export const playMatch = (results = []) => {
   const updateScoreMessage = (player) => {
     const { score: playerPoints, rival } = players[player]
     const { score: rivalPoints } = players[rival]
-    let message = ''
+
     const pointsDifference = playerPoints - rivalPoints
     if (rivalPoints >= 3 && playerPoints >= 3) {
-      message = POINTS_DIFFERENCE_MESSAGE[pointsDifference]
+      const message = POINTS_DIFFERENCE_MESSAGE[pointsDifference]
       return message?.replace('%player%', player)
+    }
+    if (playerPoints === 4) {
+      return POINTS_DIFFERENCE_MESSAGE[2].replace('%player%', player)
     } else {
-      if (playerPoints === 4) {
-        message = POINTS_DIFFERENCE_MESSAGE[2].replace('%player%', player)
-      } else {
-        message = `${POINTS[players.P1.score]} - ${POINTS[players.P2.score]}`
-      }
-      return message
+      return `${POINTS[players.P1.score]} - ${POINTS[players.P2.score]}`
     }
   }
   const matchResume = []
-  for (let player of results) {
-    players[player].score += 1
-    const message = updateScoreMessage(player)
+  for (let playerPoint of results) {
+    const player = players[playerPoint.toUpperCase()]
+    if (!player) throw new Error(UNKNOWN_PLAYER_ERROR)
+    player.score += 1
+    const message = updateScoreMessage(playerPoint)
     matchResume.push(message)
     if (message.includes('win')) break
   }

@@ -1,4 +1,4 @@
-import { playMatch } from 'challenge-2/src/tennis'
+import { playMatch, UNKNOWN_PLAYER_ERROR } from 'challenge-2/src/tennis'
 const it = test
 describe('Challenge 2 suite case', () => {
   const testSamples = [
@@ -63,5 +63,10 @@ describe('Challenge 2 suite case', () => {
       const matchResume = playMatch(input)
       expect(matchResume).toEqual(expectedOutput)
     })
+  })
+
+  it('Should raise exception, unknown player', () => {
+    const input = ['P2', 'P1', 'P3', 'P2', 'P2', 'P2']
+    expect(() => playMatch(input)).toThrow(UNKNOWN_PLAYER_ERROR)
   })
 })
