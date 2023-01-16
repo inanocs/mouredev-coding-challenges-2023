@@ -27,7 +27,7 @@ export const playMatch = (results = []) => {
       if (playerPoints === 4) {
         message = POINTS_DIFFERENCE_MESSAGE[2].replace('%player%', player)
       } else {
-        message = `${POINTS[playerPoints]} - ${POINTS[rivalPoints]}`
+        message = `${POINTS[players.P1.score]} - ${POINTS[players.P2.score]}`
       }
       return message
     }

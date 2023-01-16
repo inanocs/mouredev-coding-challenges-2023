@@ -8,7 +8,7 @@ describe('Challenge 2 suite case', () => {
       expectedOutput: [
         '15 - Love',
         '30 - Love',
-        '15 - 30',
+        '30 - 15',
         '30 - 30',
         '40 - 30',
         'Deuce',
@@ -22,7 +22,7 @@ describe('Challenge 2 suite case', () => {
       expectedOutput: [
         '15 - Love',
         '30 - Love',
-        '15 - 30',
+        '30 - 15',
         '30 - 30',
         '40 - 30',
         'Deuce',
@@ -38,7 +38,7 @@ describe('Challenge 2 suite case', () => {
       expectedOutput: [
         '15 - Love',
         '30 - Love',
-        '15 - 30',
+        '30 - 15',
         '30 - 30',
         '40 - 30',
         'P1 win the game',
