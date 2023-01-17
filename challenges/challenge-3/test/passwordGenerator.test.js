@@ -48,6 +48,16 @@ describe('Password generator suite case', () => {
     const regex = /^[a-z]+$/gi
     expect(generatePassword(options)).toMatch(regex)
   })
+  it('Should return password with upper and lower letters, numbers and without symbols', () => {
+    const options = {
+      length: 8,
+      upper: true,
+      numbers: true,
+      symbols: false,
+    }
+    const regex = /(?=.*[a-zA-Z])(?=.*[0-9])/g
+    expect(generatePassword(options)).toMatch(regex)
+  })
   it('Should return password with upper and lower letters, numbers and symbols', () => {
     const options = {
       length: 8,
@@ -55,7 +65,7 @@ describe('Password generator suite case', () => {
       numbers: true,
       symbols: true,
     }
-    const regex = /(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!#@~$%&\/()=^*.,\-_])/gi
+    const regex = /(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!#@~$%&\/()=^*.,\-_])/g
     expect(generatePassword(options)).toMatch(regex)
   })
 })
