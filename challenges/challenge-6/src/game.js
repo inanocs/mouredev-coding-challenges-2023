@@ -16,7 +16,7 @@ export class Game {
   constructor(player1, player2) {
     const availableOptions = Object.values(GameOptions)
     if (
-      !availableOptions.includes(player1) &&
+      !availableOptions.includes(player1) ||
       !availableOptions.includes(player2)
     )
       throw new Error(

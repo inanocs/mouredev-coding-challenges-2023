@@ -30,6 +30,10 @@ describe('Challenge 6 - Class Game suite test', () => {
       expect(game.getWinner()).toEqual(expectedOutput)
     })
   })
+
+  it('Should throw an error, nonexistent game option', () => {
+    expect(() => new Game('test', GameOptions.LIZARD)).toThrowError()
+  })
 })
 
 describe('Challenge 6 - getMaxWinnerGames suite test', () => {
