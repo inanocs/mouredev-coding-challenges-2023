@@ -64,5 +64,5 @@ export const getMaxWinnerGames = (results = []) => {
   const mostFrequent = Object.keys(playerPoints).filter(
     (key) => playerPoints[key] === maxCount
   )
-  return mostFrequent.length === 1 ? mostFrequent.at(0) : GameResults.TIE
+  return mostFrequent.length === 1 ? mostFrequent.pop() : GameResults.TIE
 }
